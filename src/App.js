@@ -21,10 +21,10 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Switch>
+        <Routes>
           <Route
             path="/:id"
-            render={({ location, match }) => {
+            element={({ match }) => {
               const roomID = get(match, 'params.id');
               // redirect if the roomID in auth doesn't match, or no credentials
               return roomID &&
@@ -33,7 +33,7 @@ function App() {
                 !isNil(auth.playerID) ? (
                 <Game auth={auth} setAuth={setAuth} />
               ) : (
-                <Redirect
+                <Navigate
                   to={{
                     pathname: '/',
                     state: { from: location, roomID },
@@ -42,10 +42,11 @@ function App() {
               );
             }}
           />
-          <Route path="/">
-            <Lobby setAuth={setAuth} />
-          </Route>
-        </Switch>
+          <Route
+            path="/"
+            element={<Lobby setAuth={setAuth} />}
+          />
+        </Routes>
       </Router>
     </div>
   );
