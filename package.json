@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "author": "iamwillsun@gmail.com",
   "license": "MIT",
-  "repository": "https://github.com/vikaas-ks/buzzer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vikaas-ks/buzzer"
+  },
   "engines": {
     "node": "20.x"
   },
