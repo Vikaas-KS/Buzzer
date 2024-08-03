@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": "https://github.com/vikaas-ks/buzzer",
   "engines": {
-    "node": "20.x"
+    "node": "16.13.0"
   },
   "scripts": {
     "start": "node -r esm src/server.js",
