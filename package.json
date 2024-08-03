@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": "https://github.com/vikaas-ks/buzzer",
   "engines": {
-    "node": "16.13.0"
+    "node": "20.x"
   },
   "scripts": {
     "start": "node -r esm src/server.js",
@@ -17,29 +17,29 @@
   },
   "dependencies": {
     "cross-env": "^7.0.3",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "axios": "^0.21.2",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "axios": "^1.4.0",
     "boardgame.io": "wsun/boardgame.io#master",
     "esm": "^3.2.25",
-    "howler": "^2.1.3",
-    "koa-ratelimit": "^4.2.1",
+    "howler": "^2.2.3",
+    "koa-ratelimit": "^5.0.0",
     "koa-static": "^5.0.0",
     "lodash": "^4.17.21",
-    "react": "^16.13.1",
-    "react-bootstrap": "^1.0.0",
-    "react-dom": "^16.13.1",
-    "react-icons": "^3.9.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1",
-    "uuid": "^7.0.3"
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "react-router-dom": "^6.16.0",
+    "react-scripts": "^5.0.1",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "concurrently": "^5.1.0",
-    "eslint-config-prettier": "^6.10.1",
-    "eslint-plugin-prettier": "^3.1.2",
-    "prettier": "^2.0.4"
+    "concurrently": "^8.2.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8"
   },
   "eslintConfig": {
     "extends": "react-app"
