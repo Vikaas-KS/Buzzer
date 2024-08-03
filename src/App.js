@@ -1,22 +1,13 @@
-import React, { useState } from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import { get, isNil } from 'lodash';
-
 import Lobby from './containers/Lobby';
 import Game from './containers/Game';
 import './App.css';
 
-function App() {
-  const [auth, setAuth] = useState({
-    playerID: null,
-    credentials: null,
-    roomID: null,
-  });
+function App({ auth, setAuth }) {
+  const location = useLocation();
+  const navigate = useNavigate();
 
   return (
     <div className="App">
